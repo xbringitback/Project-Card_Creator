@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Card Creator</title>
+</head>
+<body>
+    <main>
+        <h1>Card Creator</h1>
+        <form onsubmit="createCardFunction(); return false;">
+            <input id="name" type="text" placeholder="Name of the card" required>
+            <input id="points" type="number" placeholder="Points" required>
+            <input id="type" type="text" placeholder="Type" required>
+            <input id="effect" type="text" placeholder="Effect" required>
+            <input id="story" type="text" placeholder="Story" required>
+            <input id="image" type="text" placeholder="Card Image URL" required>
+            <input type="submit" value="Create Card" id="btn" required>
+        </form>
+        <div class="output"></div>
+    </main>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
